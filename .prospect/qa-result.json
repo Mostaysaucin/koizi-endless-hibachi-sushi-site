@@ -1,0 +1,19 @@
+{
+  "status": "pass",
+  "visual_score": null,
+  "css_violations_found": 0,
+  "css_violations_fixed": 0,
+  "css_violations_remaining": 0,
+  "css_violations_skipped": 0,
+  "iterations": 0,
+  "max_iterations": 2,
+  "screenshots": {
+    "/": {
+      "desktop": "/Users/mo_1/koizi-endless-hibachi-and-sushi-site/.prospect/qa-screenshots/qa-desktop-home.png",
+      "mobile": "/Users/mo_1/koizi-endless-hibachi-and-sushi-site/.prospect/qa-screenshots/qa-mobile-home.png"
+    }
+  },
+  "warnings": [
+    "Groq vision API unavailable (403 Forbidden) -- visual scoring skipped, relying on CSS audit only"
+  ]
+}

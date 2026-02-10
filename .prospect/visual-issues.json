@@ -1,0 +1,40 @@
+{
+  "iteration": 0,
+  "max_iterations": 2,
+  "status": "complete",
+  "css_rules": {
+    "container_width": "max-w-6xl",
+    "section_class": "section-padding",
+    "section_padding_y": "py-20",
+    "section_padding_x": "px-6 sm:px-8 lg:px-12",
+    "typography_scale": {
+      "h1": "text-5xl sm:text-6xl",
+      "h2": "text-4xl sm:text-5xl",
+      "h3": "text-2xl sm:text-3xl",
+      "body": "text-base",
+      "body_small": "text-sm"
+    }
+  },
+  "css_violation_count": 0,
+  "issues": [],
+  "screenshots": {
+    "/": {
+      "desktop": "/Users/mo_1/koizi-endless-hibachi-and-sushi-site/.prospect/qa-screenshots/qa-desktop-home.png",
+      "mobile": "/Users/mo_1/koizi-endless-hibachi-and-sushi-site/.prospect/qa-screenshots/qa-mobile-home.png"
+    }
+  },
+  "scores": [],
+  "visual_score": null,
+  "groq_status": "unavailable_403_forbidden",
+  "groq_warning": "Groq API returned 403 Forbidden. Vision analysis skipped. Relying on CSS audit only.",
+  "final_verdict": "pass",
+  "audit_summary": {
+    "container_width": "PASS - All sections use max-w-6xl consistently",
+    "section_padding": "PASS - All 8 content sections use section-padding class; Hero uses full-bleed with matching px-6 sm:px-8 lg:px-12",
+    "typography": "PASS - H1 (text-5xl sm:text-6xl), H2 (text-4xl sm:text-5xl), H3 (text-2xl sm:text-3xl) all match design brief",
+    "color_variables": "PASS - Zero hardcoded hex values in components; all colors use CSS variables (var(--primary), var(--accent), etc.)",
+    "section_padding_definition": "PASS - .section-padding defined in globals.css with correct responsive values (py-20, px-6 sm:px-8 lg:px-12)",
+    "dark_theme": "PASS - Consistent dark backgrounds across all sections using CSS variables",
+    "sections_verified": ["Hero", "Concept", "Menu", "Reviews", "Gallery", "Locations", "OrderingCTA", "About", "Footer"]
+  }
+}
