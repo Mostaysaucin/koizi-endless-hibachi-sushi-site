@@ -1,0 +1,330 @@
+{
+  "business_name": "Koizi Endless Hibachi & Sushi",
+  "industry": "restaurant",
+  "design_brief_version": "1.0",
+
+  "visual_direction": {
+    "summary": "A striking, dark-themed Japanese dining experience that merges traditional Japanese aesthetics with modern boldness. Deep charcoal and matte black backgrounds let vibrant food photography and warm gold accents command attention. The design evokes the precision and artistry of Japanese cuisine while communicating the generous, celebratory spirit of endless dining. Think: upscale izakaya meets contemporary sushi bar -- not cheap buffet, not stuffy fine dining.",
+    "mood": ["sophisticated", "warm", "appetizing", "Japanese-modern", "generous", "celebratory"],
+    "inspiration_notes": "Reference analysis revealed a strong pattern: the best Japanese restaurant sites (Noble Rice, SushiSamba, O-Ku) all use dark backgrounds with warm accent lighting to make food photography pop. Kingdom Sushi (direct AYCE competitor) uses a dark theme with white serif headings -- Koizi should differentiate with warmer gold accents and a more refined Japanese aesthetic rather than Kingdom's modern-generic approach. Noble Rice's Squarespace site uses full-bleed food photography with minimal overlays and a MICHELIN badge prominently featured -- Koizi should use its 2,800+ Google reviews as an equivalent trust signal. SushiSamba uses bold split-screen layouts with video backgrounds -- too heavy for Koizi's needs but the cultural storytelling approach (Japanese + South American roots) inspires how Koizi should tell its own origin story. O-Ku uses clean, minimal layouts with elegant serif typography on dark backgrounds -- this refined simplicity is the right direction for Koizi's Japanese heritage."
+  },
+
+  "color_palette": {
+    "primary": "#C41E3A",
+    "primary_light": "#E8364F",
+    "primary_dark": "#9A1830",
+    "secondary": "#1A1A1A",
+    "accent": "#D4A853",
+    "background": "#0F0F0F",
+    "surface": "#1C1C1C",
+    "surface_light": "#2A2A2A",
+    "text_primary": "#F5F0E8",
+    "text_secondary": "#A0998C",
+    "text_on_primary": "#FFFFFF",
+    "text_on_light": "#1A1A1A",
+    "success": "#16A34A",
+    "error": "#DC2626",
+    "design_rationale": "The existing brand has NO real identity (monochrome grays). This palette is crafted from Japanese aesthetic principles: the primary crimson red (#C41E3A) echoes traditional Japanese torii gates and the rising sun -- deeply associated with Japanese culture and appetite stimulation. The warm gold accent (#D4A853) references the gold leaf (kinpaku) used in Japanese art and high-end sushi presentation. The dark charcoal background (#0F0F0F) evokes the sophistication of a premium sushi counter while making food photography vivid. Warm off-white text (#F5F0E8) references washi paper tones rather than stark digital white, creating a warmer, more inviting reading experience."
+  },
+
+  "typography": {
+    "heading_font": "DM Serif Display",
+    "heading_weight": "400",
+    "heading_style": "normal",
+    "heading_letter_spacing": "0.02em",
+    "body_font": "DM Sans",
+    "body_weight": "400",
+    "body_size": "16px",
+    "accent_font": null,
+    "menu_item_font": "DM Sans",
+    "menu_item_weight": "500",
+    "menu_price_weight": "400",
+    "design_rationale": "DM Serif Display provides the elegant, refined serif character needed for a Japanese dining establishment without feeling overly Western or old-fashioned. Its clean serifs pair with DM Sans (same design family) for perfect visual harmony. This combination avoids the cliche of using a faux-Japanese brush font while maintaining sophistication. Menu items use DM Sans Medium for clarity at smaller sizes."
+  },
+
+  "sections": [
+    {
+      "id": "hero",
+      "order": 1,
+      "layout": "full-bleed dark background image with gradient overlay, centered text composition",
+      "content": {
+        "headline": "Endless Sushi & Hibachi, Made to Order",
+        "subheadline": "Tampa Bay's premier all-you-can-eat Japanese dining experience since 2011. Every dish crafted fresh, never from a buffet line.",
+        "cta_primary": { "text": "View Our Menu", "link": "#menu" },
+        "cta_secondary": { "text": "Order Online", "link": "https://order.simplemenu.com/store/1810" }
+      },
+      "visual_notes": "Full-viewport hero (min-height: 90vh) with a high-quality sushi platter or hibachi preparation image. Use a gradient overlay from bottom (rgba(15,15,15,0.85)) fading to top (rgba(15,15,15,0.3)) to ensure text readability while showing the food. The word 'Endless' should carry emotional weight -- this is the core value proposition. Add subtle Ken Burns zoom animation on the background image. Primary CTA in crimson red, secondary CTA outlined in gold.",
+      "reference": "Similar to Noble Rice's full-bleed hero approach but with centered text instead of left-aligned, and SushiSamba's scale/impact"
+    },
+    {
+      "id": "concept",
+      "order": 2,
+      "layout": "split-screen: left side text on dark background, right side food photography",
+      "content": {
+        "section_label": "The Koizi Experience",
+        "headline": "Not a Buffet. A Celebration.",
+        "body": "At Koizi, every dish is made to order by our skilled chefs. Choose from over 100 items across sushi, sashimi, hibachi, and specialty rolls -- all prepared fresh when you order. No heat lamps. No waiting trays. Just endless, made-to-order Japanese cuisine.",
+        "highlights": [
+          { "number": "100+", "label": "Menu Items" },
+          { "number": "4", "label": "Florida Locations" },
+          { "number": "Since 2011", "label": "Serving Tampa Bay" }
+        ]
+      },
+      "visual_notes": "This section is CRITICAL for differentiating from buffet perception. The headline 'Not a Buffet. A Celebration.' directly addresses the most common misconception. Right side should show a chef preparing sushi or hibachi being cooked -- emphasizing the made-to-order quality. Stats displayed in gold accent color with large numbers. Dark surface background (#1C1C1C) for this section.",
+      "reference": "Inspired by SushiSamba's cultural storytelling approach"
+    },
+    {
+      "id": "menu",
+      "order": 3,
+      "layout": "tabbed category navigation with grid of menu items, dark theme",
+      "content": {
+        "section_label": "Our Menu",
+        "headline": "From Classic to Creative",
+        "categories": ["Signature Rolls", "Classic Rolls", "Sushi & Sashimi", "Hibachi", "Appetizers", "Entrees", "Kids Menu"],
+        "featured_items": [
+          "Dancing Krab Roll", "Koizi Roll", "Rainbow Roll", "Kobe Roll",
+          "NY Strip Steak Hibachi", "Lobster Hibachi"
+        ],
+        "cta": { "text": "View Full Menu", "link": "#" }
+      },
+      "visual_notes": "Category tabs in a horizontal scrollable row (gold underline for active tab). Each menu item displayed as a card with item name, description (if available), and price. Signature Rolls tab shown first to lead with the most impressive items. Featured/popular items marked with a small gold star or 'Popular' badge. Cards on dark surface (#2A2A2A) with subtle hover lift effect. 2 columns on mobile, 3 on tablet, 4 on desktop. Do NOT show all 128 items at once -- show 8-12 per category with a 'View Full Menu' CTA.",
+      "reference": "Tab navigation similar to Kingdom Sushi's menu page but with more premium card styling"
+    },
+    {
+      "id": "reviews",
+      "order": 4,
+      "layout": "centered section with large rating display and horizontal scroll review cards",
+      "content": {
+        "section_label": "What Our Guests Say",
+        "headline": "3,450+ Reviews & Counting",
+        "google_rating": 4.2,
+        "google_review_count": 2800,
+        "yelp_rating": 3.4,
+        "featured_reviews": [
+          "Sushi is where this place shines, with most rolls offering 8-10 pieces. Great value for all-you-can-eat.",
+          "Everything is made to order including the hibachi. Now my favorite Japanese restaurant.",
+          "The waitress is efficient, restrooms are clean and well designed, and there is hibachi prepared right in front of you."
+        ]
+      },
+      "visual_notes": "Large Google rating displayed prominently with actual Google star icons. Show '4.2 stars from 2,800+ reviews' in gold accent. Review cards in horizontal scroll carousel with quotation marks in crimson. Each card shows reviewer name initial, star rating, and review excerpt. Dark background (#0F0F0F) with surface cards (#1C1C1C). The high volume of reviews (3,450 total) is a massive trust signal -- make the number visually dominant.",
+      "reference": "Kingdom Sushi embeds Google reviews effectively -- borrow this approach but with more premium styling"
+    },
+    {
+      "id": "gallery",
+      "order": 5,
+      "layout": "masonry grid photo gallery with lightbox on click",
+      "content": {
+        "section_label": "Our Craft",
+        "headline": "Every Dish, A Work of Art",
+        "image_categories": ["signature rolls", "hibachi preparation", "sashimi platters", "restaurant interior", "chef at work"]
+      },
+      "visual_notes": "Masonry grid layout: 3 columns desktop, 2 tablet, 1 mobile. Mix of food close-ups and restaurant ambiance shots. Subtle hover effect showing a gold border glow. Images should emphasize the made-to-order preparation process -- chef hands crafting rolls, hibachi flames, beautiful plating. No stock photos. If real photos unavailable, use high-quality AI-generated Japanese cuisine photography consistent with the brand palette.",
+      "reference": "Noble Rice's photo gallery approach -- real food photography, not overly styled"
+    },
+    {
+      "id": "locations",
+      "order": 6,
+      "layout": "location cards in 2x2 grid with embedded Google Map",
+      "content": {
+        "section_label": "Visit Us",
+        "headline": "4 Locations Across Florida",
+        "locations": [
+          {
+            "name": "Tampa Palms",
+            "label": "Original Location",
+            "address": "17012 Palm Pointe Dr, Tampa, FL 33647",
+            "phone": "(813) 971-1919",
+            "hours": {
+              "mon": "11:30 AM - 10:00 PM",
+              "tue": "Closed",
+              "wed_sat": "11:30 AM - 10:00 PM",
+              "sun": "12:00 PM - 9:00 PM"
+            }
+          },
+          {
+            "name": "New Port Richey",
+            "address": "4120 Little Rd, New Port Richey, FL 34653",
+            "phone": null,
+            "hours": null
+          },
+          {
+            "name": "Brandon",
+            "address": null,
+            "phone": null,
+            "hours": null
+          },
+          {
+            "name": "Royal Palm Beach",
+            "address": "10233 Okeechobee Blvd B1, Royal Palm Beach, FL 33411",
+            "phone": null,
+            "hours": null,
+            "note": "Branded as Koizi Endless Gourmet Grill & Sushi"
+          }
+        ]
+      },
+      "visual_notes": "Location cards on surface background (#1C1C1C) with crimson accent bar at top of each card. Primary location (Tampa Palms) displayed larger or with an 'Original Location' gold badge. Each card shows: name, address (linked to Google Maps), phone (click-to-call), hours. Embedded Google Map below the cards showing all 4 locations with crimson pins. Cards should have subtle hover lift effect.",
+      "reference": "Kingdom Sushi's multi-location approach but with more distinct card styling per location"
+    },
+    {
+      "id": "ordering-cta",
+      "order": 7,
+      "layout": "full-width banner with background image, dark overlay, centered text and CTAs",
+      "content": {
+        "headline": "Ready to Feast?",
+        "subheadline": "Order online for pickup or delivery, or make a reservation for dine-in.",
+        "cta_primary": { "text": "Order Online", "link": "https://order.simplemenu.com/store/1810" },
+        "cta_secondary": { "text": "Call to Reserve", "link": "tel:8139711919" }
+      },
+      "visual_notes": "This is a conversion-focused interstitial. Full-width with a blurred background food image and heavy dark overlay. Headline in gold accent color. Primary CTA in crimson red (large, impossible to miss). Secondary CTA outlined in gold. Include delivery platform badges (DoorDash, UberEats, GrubHub) in a row below the CTAs as subtle trust signals. Mention 'Available on DoorDash, Uber Eats & Grubhub'.",
+      "reference": "SushiSamba's bold booking CTAs but adapted for casual ordering"
+    },
+    {
+      "id": "about",
+      "order": 8,
+      "layout": "alternating image and text blocks, storytelling format",
+      "content": {
+        "section_label": "Our Story",
+        "headline": "A Tampa Tradition Since 2011",
+        "body": "Born in Tampa's Palm Pointe neighborhood, Koizi set out to redefine all-you-can-eat Japanese dining. The name 'Koizi' draws from Japanese roots, reflecting our commitment to authentic flavors and the joy of shared meals. What started as a single restaurant has grown to four Florida locations, united by one promise: every dish made fresh, every visit endless.",
+        "founding_year": 2011,
+        "values": ["Made-to-order freshness", "Generous portions", "Family-friendly atmosphere", "Authentic Japanese recipes"]
+      },
+      "visual_notes": "Warm, inviting section that builds trust and tells the origin story. Use warm-toned restaurant interior photography or chef preparation shots alongside the text. The founding year '2011' displayed as a large decorative element. Section background slightly different (#1C1C1C) to create visual rhythm. The Japanese cultural connection should feel authentic but not forced -- no cliche cherry blossoms or torii gates in the imagery.",
+      "reference": "Noble Rice's about section storytelling -- brief, genuine, not overwrought"
+    },
+    {
+      "id": "footer",
+      "order": 9,
+      "layout": "dark footer with 3-column layout plus bottom bar",
+      "content": {
+        "columns": [
+          {
+            "heading": "Koizi Tampa Palms",
+            "items": ["17012 Palm Pointe Dr", "Tampa, FL 33647", "(813) 971-1919"]
+          },
+          {
+            "heading": "Hours",
+            "items": ["Mon, Wed-Sat: 11:30AM - 10PM", "Tuesday: Closed", "Sunday: 12PM - 9PM"]
+          },
+          {
+            "heading": "Connect",
+            "items": ["Order Online", "Instagram", "Yelp", "TripAdvisor"]
+          }
+        ],
+        "bottom_bar": "2026 Koizi Endless Hibachi & Sushi. All rights reserved."
+      },
+      "visual_notes": "Footer on the darkest background (#0A0A0A). Koizi name/text-logo in gold at the top. Three columns evenly spaced. Social media icons in muted gold that brighten on hover. Click-to-call phone number. 'Order Online' link prominent. Bottom bar with copyright in small muted text. Keep clean and minimal -- no SEO keyword spam like the current SimpleMenu site."
+    }
+  ],
+
+  "design_references": [
+    {
+      "url": "https://www.noblericeco.com/",
+      "name": "Noble Rice (Tampa)",
+      "what_to_borrow": "Dark-themed Squarespace elegance with full-bleed food photography. MICHELIN badge-style trust signal presentation. Clean serif headings on dark backgrounds. Single-page scrolling layout with clear section breaks. Photo-forward gallery approach.",
+      "what_to_avoid": "Too upscale/exclusive feeling for an AYCE concept. Their sparse navigation works for a single high-end location but Koizi needs more robust multi-location support."
+    },
+    {
+      "url": "https://www.kingdomsushi.com/",
+      "name": "Kingdom Sushi (Direct AYCE Competitor)",
+      "what_to_borrow": "Multi-location architecture with per-location pages. Google review integration with real reviews displayed. Online ordering and reservation CTAs prominently placed. Location dropdown selector approach.",
+      "what_to_avoid": "Generic WordPress theme feeling despite dark theme. Interior photos look like a sports bar, not a premium Japanese restaurant. SEO-heavy copy at the bottom reads like spam. Too many repeated location cards in the carousel. The design does not differentiate from any generic dark-themed restaurant template."
+    },
+    {
+      "url": "https://www.sushisamba.com/",
+      "name": "SushiSamba (Global Premium)",
+      "what_to_borrow": "Bold, immersive hero with video background concept. Cultural storytelling that weaves cuisine history with brand identity. Split-screen layouts that balance imagery with narrative text. Strong use of a signature accent color (their orange) for CTAs and brand identity.",
+      "what_to_avoid": "Too high-end and international for a Tampa AYCE restaurant. Complex multi-location global setup is overengineered. Pop-up modals on load are annoying. Cookie consent patterns are overkill for a single-concept restaurant."
+    },
+    {
+      "url": "https://www.o-kusushi.com/location/tampa/",
+      "name": "O-Ku Tampa (Coming Soon - Premium Reference)",
+      "what_to_borrow": "Clean BentoBox platform layout with minimal navigation. Elegant serif typography on dark backgrounds. Press/awards section as social proof. Clean map integration. The 'coming soon' page alone has more design sophistication than most full restaurant sites.",
+      "what_to_avoid": "Too minimal for a restaurant with 128 menu items and 4 locations. Their single-location approach does not scale. Pre-launch page obviously has limited content."
+    }
+  ],
+
+  "differentiation_notes": [
+    "Kingdom Sushi (direct AYCE competitor in Tampa/Florida) uses a generic dark WordPress theme with sports-bar interior photos -- Koizi's site should feel distinctly Japanese and more refined, with warm gold accents instead of plain white",
+    "Most Tampa sushi restaurant sites (Ichiban, SoHo Sushi) either use generic templates or are over-designed with cookie consent walls -- Koizi's clean, fast-loading dark-themed site will stand out",
+    "The AYCE concept is often perceived as cheap/low-quality -- the premium dark design with gold accents and 'Made to Order' messaging directly combats this perception",
+    "Koizi's 2,800+ Google reviews are a massive competitive advantage -- Kingdom Sushi Tampa has 3,438 but Koizi's multi-location total of 3,450+ puts them on par. Display this prominently.",
+    "The Japanese cultural connection through the name 'Koizi' is untapped on their current site -- use it as a brand storytelling element",
+    "Founded in 2011 gives Koizi heritage credibility as one of Tampa's original AYCE Japanese restaurants -- make this a trust signal",
+    "Current SimpleMenu site has a 9.8MB page load with zero brand identity -- any custom site will be a massive upgrade in both performance and visual impact"
+  ],
+
+  "css_consistency_rules": {
+    "container_width": "max-w-6xl",
+    "section_class": "section-padding",
+    "section_padding_y": "py-20",
+    "section_padding_x": "px-6 sm:px-8 lg:px-12",
+    "typography_scale": {
+      "h1": "text-5xl sm:text-6xl",
+      "h2": "text-4xl sm:text-5xl",
+      "h3": "text-2xl sm:text-3xl",
+      "body": "text-base",
+      "body_small": "text-sm"
+    },
+    "color_variables": {
+      "--primary": "#C41E3A",
+      "--primary-light": "#E8364F",
+      "--primary-dark": "#9A1830",
+      "--secondary": "#1A1A1A",
+      "--accent": "#D4A853",
+      "--background": "#0F0F0F",
+      "--surface": "#1C1C1C",
+      "--surface-light": "#2A2A2A",
+      "--text-primary": "#F5F0E8",
+      "--text-secondary": "#A0998C",
+      "--text-on-primary": "#FFFFFF",
+      "--success": "#16A34A",
+      "--error": "#DC2626"
+    },
+    "enforcement_note": "ALL sections must use these exact classes and CSS variables. No hardcoded hex values in components -- always reference CSS variables. Container width max-w-6xl applies to all content sections. Section padding py-20 px-6 sm:px-8 lg:px-12 is mandatory for every section. Typography scale must be consistent across all headings. Dark theme is global -- no white-background sections."
+  },
+
+  "anti_patterns": [
+    "No stock food photos -- use real Koizi photography from Cloudinary or high-quality AI-generated Japanese cuisine photography",
+    "No generic 'Welcome to our restaurant' copy -- every headline should be specific to Koizi's identity and AYCE concept",
+    "No auto-playing video on mobile -- performance matters for a restaurant site",
+    "No PDF-only menu -- all menu items displayed in browsable, categorized sections",
+    "No white/light backgrounds -- maintain dark theme consistently across ALL sections for the premium Japanese aesthetic",
+    "No faux-Japanese brush script fonts or cherry blossom decorations -- the Japanese aesthetic should come from restraint, precision, and warmth, not cliches",
+    "No SEO keyword spam in the footer like the current SimpleMenu site",
+    "No buffet imagery or language -- always emphasize 'made to order' to combat the cheap-AYCE perception",
+    "No tiny text on dark backgrounds -- ensure all text meets WCAG AA contrast (4.5:1 minimum)",
+    "No cluttered layouts -- embrace Japanese ma (negative space) principles for breathing room between elements"
+  ],
+
+  "content_inventory": {
+    "have_data": [
+      "full menu with 128 items across 11 categories with prices and descriptions",
+      "hours for primary location (with noted Yelp vs website discrepancy)",
+      "addresses for 3 of 4 locations",
+      "phone number for primary location",
+      "3 featured review quotes",
+      "review ratings and counts (Google 4.2/2800, Yelp 3.4/650)",
+      "social media links (Instagram, Yelp, TripAdvisor, delivery platforms)",
+      "founding year (2011)",
+      "cuisine concept details (AYCE made-to-order)",
+      "dining attributes (casual, family-friendly, dog-friendly, reservations, delivery)",
+      "online ordering URL (SimpleMenu)",
+      "food photography via Cloudinary"
+    ],
+    "need_to_write": [
+      "hero tagline and headline copy",
+      "about section narrative (origin story, 'Koizi' name meaning, growth from 1 to 4 locations)",
+      "concept section copy explaining made-to-order vs buffet",
+      "meta title and description for SEO",
+      "menu section introductory copy per category",
+      "CTA microcopy for ordering and reservations"
+    ],
+    "need_to_source": [
+      "hero background image (high-quality sushi platter or hibachi preparation)",
+      "gallery images (food close-ups, interior ambiance, chef preparation shots)",
+      "about section imagery (restaurant interior, founding story visual)",
+      "section background textures or patterns (subtle Japanese washi paper or ink wash textures for visual depth)"
+    ]
+  }
+}

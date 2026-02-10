@@ -1,0 +1,273 @@
+{
+  "app_name": "koizi-endless-hibachi-and-sushi-site",
+  "app_type": "web",
+  "tech_stack": {
+    "language": "TypeScript",
+    "framework": "nextjs",
+    "build_tool": "next",
+    "launch_command": "npm run dev",
+    "ready_signal": "http://localhost:3000"
+  },
+  "design_profile": {
+    "style": "modern-dark",
+    "animation_level": "subtle"
+  },
+  "brand_kit": {
+    "colors": {
+      "primary": "#C41E3A",
+      "secondary": "#1A1A1A",
+      "accent": "#D4A853",
+      "background": "#0F0F0F",
+      "surface": "#1C1C1C",
+      "surface_light": "#2A2A2A",
+      "text_primary": "#F5F0E8",
+      "text_secondary": "#A0998C"
+    },
+    "fonts": {
+      "heading": "DM Serif Display",
+      "body": "DM Sans"
+    },
+    "tone": ["premium", "upscale", "contemporary", "authentic Japanese"]
+  },
+  "goals": [
+    {
+      "id": "G-001",
+      "description": "Hero section with full-bleed dark background, gradient overlay, centered headline, subheadline, and two CTAs",
+      "acceptance_criteria": "Hero section visible with headline 'Endless Sushi & Hibachi, Made to Order', subheadline text, View Our Menu CTA (crimson), Order Online CTA (gold outline linking to simplemenu), min-height 90vh, Ken Burns zoom effect on background",
+      "test_scenario": {
+        "steps": [
+          "Navigate to homepage",
+          "Verify hero section is visible with min-height 90vh",
+          "Verify headline text matches",
+          "Verify both CTAs are present and styled correctly",
+          "Verify Order Online links to https://order.simplemenu.com/store/1810"
+        ],
+        "visual_check": "Dark hero with crimson and gold CTAs, centered text, professional appearance"
+      },
+      "phase": 1,
+      "status": "untested",
+      "fail_count": 0,
+      "outcome_definition": {
+        "what_good_looks_like": "A dramatic, full-screen dark hero that immediately communicates premium Japanese dining. The headline is large and centered, CTAs are clearly distinct in crimson and gold.",
+        "minimum_viable_signals": ["Headline says 'Endless Sushi & Hibachi, Made to Order'", "Two CTAs visible with correct colors", "Dark background with no white/light areas", "Order Online links to simplemenu URL"],
+        "failure_indicators": ["White or light background visible", "Generic placeholder text", "Missing or broken CTAs", "Lorem ipsum content"]
+      }
+    },
+    {
+      "id": "G-002",
+      "description": "Concept section explaining made-to-order dining with stats",
+      "acceptance_criteria": "Split-screen layout with headline 'Not a Buffet. A Celebration.' and body text explaining the concept. Stats showing 100+ Menu Items, 4 Florida Locations, Since 2011 in gold accent. Background #1C1C1C.",
+      "test_scenario": {
+        "steps": [
+          "Scroll to concept section",
+          "Verify headline text",
+          "Verify stats are present with correct values",
+          "Verify gold accent on stats"
+        ],
+        "visual_check": "Split layout with text and stats on dark surface background"
+      },
+      "phase": 1,
+      "status": "untested",
+      "fail_count": 0,
+      "outcome_definition": {
+        "what_good_looks_like": "An elegant section that clearly communicates Koizi is NOT a buffet, with impressive stats highlighted in gold.",
+        "minimum_viable_signals": ["Headline says 'Not a Buffet. A Celebration.'", "Three stats with correct numbers", "Gold accent on stats", "Surface background color"],
+        "failure_indicators": ["Generic restaurant description", "Wrong stats numbers", "White background"]
+      }
+    },
+    {
+      "id": "G-003",
+      "description": "Tabbed menu section with real menu data across 7 categories",
+      "acceptance_criteria": "Tabbed navigation with 7 categories (Signature Rolls, Classic Rolls, Sushi & Sashimi, Hibachi, Appetizers, Entrees, Kids Menu). Each tab shows 8-12 items with real names, descriptions, prices. Cards on #2A2A2A with hover lift. Gold underline on active tab. Popular badges on specified items.",
+      "test_scenario": {
+        "steps": [
+          "Scroll to menu section",
+          "Verify tab navigation with all 7 categories",
+          "Click each tab and verify items appear",
+          "Verify Dancing Krab Roll shows $11.95",
+          "Verify Popular badges on specified items",
+          "Verify card hover effect"
+        ],
+        "visual_check": "Tabbed menu with gold active indicator, dark cards with real menu data"
+      },
+      "phase": 2,
+      "status": "untested",
+      "fail_count": 0,
+      "outcome_definition": {
+        "what_good_looks_like": "A beautifully organized menu with working tabs, real prices, and appetizing presentation on dark cards.",
+        "minimum_viable_signals": ["All 7 tabs present and clickable", "Real menu item names and prices visible", "Popular badges on correct items", "Gold underline on active tab"],
+        "failure_indicators": ["Placeholder menu items", "Missing prices", "Tabs dont switch content", "Generic food descriptions"]
+      }
+    },
+    {
+      "id": "G-004",
+      "description": "Reviews section with ratings and customer testimonials carousel",
+      "acceptance_criteria": "Centered section with large 4.2 rating, Google stars, '3,450+ Reviews & Counting' headline. Horizontal scroll carousel with real review quotes. Google (4.2/5, 2800 reviews) and Yelp (3.4/5, 650 reviews) ratings shown.",
+      "test_scenario": {
+        "steps": [
+          "Scroll to reviews section",
+          "Verify 4.2 rating displayed prominently",
+          "Verify review carousel scrolls",
+          "Verify real review quotes are shown",
+          "Verify Google and Yelp ratings"
+        ],
+        "visual_check": "Large rating display with star visualization, scrollable review cards"
+      },
+      "phase": 2,
+      "status": "untested",
+      "fail_count": 0,
+      "outcome_definition": {
+        "what_good_looks_like": "A trust-building section with prominent ratings and real customer quotes that make visitors want to try Koizi.",
+        "minimum_viable_signals": ["4.2 rating prominently displayed", "Real review quotes visible", "Google and Yelp ratings shown", "Carousel is scrollable"],
+        "failure_indicators": ["Fake review text", "Missing rating numbers", "Non-scrollable carousel"]
+      }
+    },
+    {
+      "id": "G-005",
+      "description": "Gallery section with masonry grid of food photography",
+      "acceptance_criteria": "Masonry grid with 'Every Dish, A Work of Art' headline. 3 columns desktop, 2 tablet, 1 mobile. Uses Unsplash sushi/hibachi images. Gold border glow on hover.",
+      "test_scenario": {
+        "steps": [
+          "Scroll to gallery section",
+          "Verify masonry layout",
+          "Verify responsive column changes",
+          "Verify hover effect with gold glow"
+        ],
+        "visual_check": "Masonry grid of high-quality food images with gold hover effect"
+      },
+      "phase": 2,
+      "status": "untested",
+      "fail_count": 0,
+      "outcome_definition": {
+        "what_good_looks_like": "A visually stunning grid of food photos that showcases the quality of Koizi dishes.",
+        "minimum_viable_signals": ["Masonry layout with images", "Headline says 'Every Dish, A Work of Art'", "Images load properly", "Responsive columns"],
+        "failure_indicators": ["Broken image links", "Single column on desktop", "No hover effect"]
+      }
+    },
+    {
+      "id": "G-006",
+      "description": "Locations section with 4 location cards in 2x2 grid",
+      "acceptance_criteria": "2x2 grid with '4 Locations Across Florida' headline. Each card has address, phone, hours. Tampa Palms has 'Original Location' gold badge. Crimson accent bar at top of each card. Real addresses and phone numbers.",
+      "test_scenario": {
+        "steps": [
+          "Scroll to locations section",
+          "Verify 4 location cards",
+          "Verify Tampa Palms address: 17012 Palm Pointe Dr",
+          "Verify phone: (813) 971-1919",
+          "Verify Original Location badge on Tampa Palms",
+          "Verify crimson accent bars"
+        ],
+        "visual_check": "2x2 grid of dark location cards with crimson accents and gold badge"
+      },
+      "phase": 2,
+      "status": "untested",
+      "fail_count": 0,
+      "outcome_definition": {
+        "what_good_looks_like": "A clear locations grid showing all 4 Florida locations with real addresses, making it easy for visitors to find their nearest Koizi.",
+        "minimum_viable_signals": ["4 location cards visible", "Real Tampa Palms address", "Real phone number (813) 971-1919", "Original Location badge on Tampa Palms"],
+        "failure_indicators": ["Placeholder addresses", "Fake phone numbers", "Missing locations"]
+      }
+    },
+    {
+      "id": "G-007",
+      "description": "Ordering CTA banner and About section",
+      "acceptance_criteria": "Full-width banner with 'Ready to Feast?' headline in gold. Order Online CTA linking to simplemenu. Call to Reserve CTA linking to tel:8139711919. DoorDash/Uber Eats/Grubhub mentioned. About section with 'A Tampa Tradition Since 2011' headline.",
+      "test_scenario": {
+        "steps": [
+          "Scroll to ordering CTA",
+          "Verify headline and CTAs",
+          "Verify Order Online links to simplemenu",
+          "Verify Call to Reserve links to phone",
+          "Scroll to About section",
+          "Verify origin story content"
+        ],
+        "visual_check": "Bold CTA banner with gold headline and crimson/gold buttons"
+      },
+      "phase": 3,
+      "status": "untested",
+      "fail_count": 0,
+      "outcome_definition": {
+        "what_good_looks_like": "A compelling call-to-action that drives online orders and reservations, followed by an authentic about section.",
+        "minimum_viable_signals": ["Ready to Feast headline in gold", "Order Online links to simplemenu", "Phone link works", "Delivery platforms mentioned", "About section with 2011 founding date"],
+        "failure_indicators": ["Broken links", "Missing delivery platform mentions", "Generic about text"]
+      }
+    },
+    {
+      "id": "G-008",
+      "description": "Footer with 3-column layout on dark background",
+      "acceptance_criteria": "3-column layout on #0A0A0A. Col 1: Tampa Palms address + phone. Col 2: Hours. Col 3: Connect links (Order Online, Instagram @koizi_sushi_and_hibachi, Yelp, TripAdvisor). Copyright 2026.",
+      "test_scenario": {
+        "steps": [
+          "Scroll to footer",
+          "Verify 3-column layout",
+          "Verify address and phone in col 1",
+          "Verify hours in col 2",
+          "Verify social links in col 3",
+          "Verify copyright 2026"
+        ],
+        "visual_check": "Dark footer with organized columns and real contact info"
+      },
+      "phase": 3,
+      "status": "untested",
+      "fail_count": 0,
+      "outcome_definition": {
+        "what_good_looks_like": "A clean, dark footer with all essential contact info organized in three columns.",
+        "minimum_viable_signals": ["Three column layout", "Real address and phone", "Hours displayed", "Instagram handle correct", "Copyright 2026"],
+        "failure_indicators": ["Missing contact info", "Placeholder social links", "Wrong copyright year"]
+      }
+    },
+    {
+      "id": "G-009",
+      "description": "Consistent dark theme with CSS variables and responsive design across all viewports",
+      "acceptance_criteria": "All CSS variables defined in globals.css. section-padding utility class used on every section. Consistent max-w-6xl containers. No hardcoded hex colors in components. Typography scale follows spec. Fully responsive on mobile/tablet/desktop. NO white/light backgrounds anywhere.",
+      "test_scenario": {
+        "steps": [
+          "Check globals.css for CSS variables",
+          "Verify section-padding class exists",
+          "Verify all sections use section-padding",
+          "Check components for hardcoded hex values",
+          "Test responsive breakpoints"
+        ],
+        "visual_check": "Consistent dark theme across all sections, proper spacing, responsive layout"
+      },
+      "phase": 1,
+      "status": "untested",
+      "fail_count": 0,
+      "outcome_definition": {
+        "what_good_looks_like": "A cohesive dark-themed design where every section feels like it belongs to the same premium restaurant website.",
+        "minimum_viable_signals": ["CSS variables for all brand colors", "section-padding utility class used", "max-w-6xl containers", "No white backgrounds", "Responsive on mobile"],
+        "failure_indicators": ["Hardcoded hex values in components", "Inconsistent spacing", "White sections visible", "Broken mobile layout"]
+      }
+    },
+    {
+      "id": "G-010",
+      "description": "SEO optimization with meta tags, structured data, and accessibility",
+      "acceptance_criteria": "Proper title tag, meta description, Open Graph tags. Restaurant structured data (JSON-LD). WCAG AA contrast ratios. Semantic HTML. Fast loading target.",
+      "test_scenario": {
+        "steps": [
+          "Check page source for meta tags",
+          "Verify JSON-LD structured data",
+          "Check contrast ratios on key elements",
+          "Verify semantic HTML elements"
+        ],
+        "visual_check": "N/A - code-level verification"
+      },
+      "phase": 3,
+      "status": "untested",
+      "fail_count": 0,
+      "outcome_definition": {
+        "what_good_looks_like": "A website that ranks well in search, loads fast, and is accessible to all users.",
+        "minimum_viable_signals": ["Title tag with Koizi name", "Meta description present", "JSON-LD restaurant schema", "Semantic HTML used"],
+        "failure_indicators": ["Missing meta tags", "No structured data", "Generic page title", "All divs no semantic elements"]
+      }
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-02-10T00:00:00Z",
+    "last_updated": "2026-02-10T00:00:00Z",
+    "total_iterations": 0,
+    "total_visual_test_rounds": 0,
+    "total_quality_review_rounds": 0,
+    "groq_calls_made": 0
+  }
+}

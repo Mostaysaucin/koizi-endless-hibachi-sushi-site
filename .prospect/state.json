@@ -1,0 +1,26 @@
+{
+  "business_name": "Koizi Endless Hibachi and Sushi",
+  "city": "Tampa, FL",
+  "website_url": "https://orderkoiziendlesshibachiandsushi.com/",
+  "industry": "restaurant",
+  "project_dir": "/Users/mo_1/koizi-endless-hibachi-and-sushi-site",
+  "seller_prefs": {
+    "name": "(update later)",
+    "email": "(update later)",
+    "phone": "(update later)",
+    "default_offer": "$150/mo website management — free website included",
+    "default_price": "$150/mo",
+    "created_at": "2026-02-09",
+    "prospects_completed": 1
+  },
+  "phase_status": {
+    "business_intel": "pending",
+    "design_research": "pending",
+    "build": "pending",
+    "visual_qa": "pending",
+    "deploy": "pending",
+    "contact_intel": "pending",
+    "outreach_gen": "pending"
+  },
+  "started_at": "2026-02-10T00:00:00Z"
+}

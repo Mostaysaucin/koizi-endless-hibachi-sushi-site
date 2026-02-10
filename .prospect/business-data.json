@@ -1,0 +1,399 @@
+{
+  "business_name": "Koizi Endless Hibachi and Sushi",
+  "official_name": "Koizi Endless Hibachi & Sushi Eatery",
+  "city": "Tampa, FL",
+  "industry": "restaurant",
+  "cuisine_type": "Japanese / All-You-Can-Eat Sushi & Hibachi",
+  "founded_year": 2011,
+
+  "website": {
+    "url": "https://orderkoiziendlesshibachiandsushi.com/",
+    "has_website": true,
+    "platform": "SimpleMenu (Online Ordering Platform)",
+    "page_count": 4,
+    "pages": ["Home", "Menu", "About Us", "Contact Us"],
+    "performance": {
+      "load_time_ms": 677,
+      "dom_content_loaded_ms": 442,
+      "first_paint_ms": 836,
+      "first_contentful_paint_ms": 836,
+      "resource_count": 14,
+      "transfer_size_bytes": 9826214
+    },
+    "hero_text": "Most Loved Dishes - Handpicked selections that keep our customers coming back for more.",
+    "about_text": "Our chefs specialize in authentic and delicious food. The staff at Koizi Endless Hibachi & Sushi Eatery is devoted to serving customers mouthwatering dishes that feature the highest quality ingredients available.",
+    "meta_description": "Koizi Endless Hibachi & Sushi Eatery | Order Online",
+    "has_ssl": true,
+    "is_mobile_responsive": true,
+    "online_ordering": {
+      "platform": "SimpleMenu",
+      "url": "https://order.simplemenu.com/store/1810"
+    },
+    "ctas": ["Order Now", "Start Your Order", "View Full Menu"],
+    "image_hosting": "Cloudinary (res.cloudinary.com/simplemenu)"
+  },
+
+  "brand": {
+    "primary_color": "#252525",
+    "secondary_color": "#3A3A3A",
+    "accent_color": "#F5F5F5",
+    "text_color": "#3A3A3A",
+    "logo_url": null,
+    "logo_alt_text": null,
+    "logo_type": "text-only (no image logo)",
+    "tagline": "Endless Hibachi & Sushi",
+    "founding_year": 2011
+  },
+
+  "contact": {
+    "phone": "(813) 971-1919",
+    "email": null,
+    "address": "17012 Palm Pointe Dr, Tampa, FL 33647",
+    "neighborhood": "Tampa Palms",
+    "hours": {
+      "source": "yelp (most recently updated)",
+      "monday": "11:30 AM - 10:00 PM",
+      "tuesday": "Closed",
+      "wednesday": "11:30 AM - 10:00 PM",
+      "thursday": "11:30 AM - 10:00 PM",
+      "friday": "11:30 AM - 10:00 PM",
+      "saturday": "11:30 AM - 10:00 PM",
+      "sunday": "12:00 PM - 9:00 PM"
+    },
+    "hours_website": {
+      "source": "website footer",
+      "monday_saturday": "11:30am - 9:30pm",
+      "sunday": "12:00pm - 8:30pm"
+    }
+  },
+
+  "locations": [
+    {
+      "name": "Tampa Palms (Original)",
+      "address": "17012 Palm Pointe Dr, Tampa, FL 33647",
+      "phone": "(813) 971-1919",
+      "is_primary": true,
+      "neighborhood": "Tampa Palms"
+    },
+    {
+      "name": "New Port Richey",
+      "address": "4120 Little Rd, New Port Richey, FL 34653",
+      "phone": null,
+      "is_primary": false,
+      "website": "https://www.koiziendlesshibachisushieatery.com/"
+    },
+    {
+      "name": "Brandon",
+      "address": null,
+      "phone": null,
+      "is_primary": false,
+      "notes": "Referenced in TripAdvisor reviews"
+    },
+    {
+      "name": "Royal Palm Beach",
+      "address": "10233 Okeechobee Blvd B1, Royal Palm Beach, FL 33411",
+      "phone": null,
+      "is_primary": false,
+      "website": "https://koizifl.com/",
+      "notes": "Branded as Koizi Endless Gourmet Grill & Sushi"
+    }
+  ],
+
+  "reviews": {
+    "google_rating": 4.2,
+    "google_review_count": 2800,
+    "yelp_rating": 3.4,
+    "yelp_review_count": 650,
+    "tripadvisor_present": true,
+    "composite_rating": 4.04,
+    "total_reviews": 3450,
+    "featured_reviews": [
+      "Sushi is where this place shines, with most rolls offering 8-10 pieces. Great value for all-you-can-eat.",
+      "Everything is made to order including the hibachi. Now my favorite Japanese restaurant.",
+      "The waitress is efficient, restrooms are clean and well designed, and there is hibachi prepared right in front of you."
+    ],
+    "review_themes": {
+      "positive": ["great value AYCE", "fresh sushi", "made-to-order hibachi", "good for families", "extensive menu variety"],
+      "negative": ["service inconsistency", "food quality variations", "wait times during peak hours"]
+    }
+  },
+
+  "services_or_menu": {
+    "type": "menu",
+    "dining_concept": "All-You-Can-Eat (AYCE) Hibachi and Sushi - made to order, not buffet style",
+    "price_range": "$$",
+    "avg_spend_per_person": 30,
+    "categories": [
+      {
+        "name": "Soup and Appetizers",
+        "item_count": 25,
+        "items": [
+          { "name": "Miso Soup", "price": "$3.95" },
+          { "name": "Clear Onion Soup", "price": "$3.95" },
+          { "name": "Edamame", "price": "$4.95" },
+          { "name": "Ginger Salad", "price": "$2.95" },
+          { "name": "Gyoza (6 pcs)", "price": "$4.95" },
+          { "name": "Shrimp Tempura (4 pcs)", "price": "$6.95" },
+          { "name": "Seaweed Salad", "price": "$5.25" },
+          { "name": "Shanghai Egg Roll (4 pcs)", "price": "$4.95" },
+          { "name": "Sesame Ball (4 pcs)", "price": "$4.95" },
+          { "name": "Krab Rangoon (5pcs)", "price": "$7.25" },
+          { "name": "Tuna Tataki", "price": "$10.95" },
+          { "name": "Tuna Tartar", "price": "$10.95" },
+          { "name": "Salmon Tartar", "price": "$10.95" },
+          { "name": "Yellowtail Jalapeno (6pcs)", "price": "$12.95" },
+          { "name": "Asian Taco (6pcs)", "price": "$8.95" },
+          { "name": "Koizi Bite (6pcs)", "price": "$8.95" }
+        ]
+      },
+      {
+        "name": "Sushi (Nigiri)",
+        "item_count": 12,
+        "items": [
+          { "name": "Tuna (su)", "price": "$2.25" },
+          { "name": "Salmon (su)", "price": "$2.25" },
+          { "name": "Shrimp (su)", "price": "$2.25" },
+          { "name": "Krab Sticks (su)", "price": "$2.25" },
+          { "name": "White Fish (su)", "price": "$2.25" },
+          { "name": "Tamago (su)", "price": "$2.25" },
+          { "name": "Inari (su)", "price": "$2.25" },
+          { "name": "White Tuna (su)", "price": "$2.25" },
+          { "name": "Torched Salmon (su)", "price": "$2.25" },
+          { "name": "Masago (su)", "price": "$2.25" },
+          { "name": "Tobiko (su)", "price": "$2.25" },
+          { "name": "Mackerel (su)", "price": "$2.25" }
+        ]
+      },
+      {
+        "name": "Classic Rolls",
+        "item_count": 11,
+        "items": [
+          { "name": "Tuna Roll (8 pcs)", "price": "$4.50" },
+          { "name": "Salmon Roll (8 pcs)", "price": "$4.50" },
+          { "name": "Spicy Tuna Roll (8 pcs)", "price": "$5.50" },
+          { "name": "Spicy Salmon Roll (8 pcs)", "price": "$5.50" },
+          { "name": "Avocado Roll (8 pcs)", "price": "$4.50" },
+          { "name": "Vegetable Roll (8 pcs)", "price": "$4.95" },
+          { "name": "Cucumber Roll (8 pcs)", "price": "$4.50" },
+          { "name": "Sweet Potato Roll (8 pcs)", "price": "$4.95" },
+          { "name": "Spicy Yellowtail Roll (8 Pcs)", "price": "$6.50" },
+          { "name": "Seaweed Salad Roll (8 Pcs)", "price": "$5.50" },
+          { "name": "Kani Roll (8pcs)", "price": "$5.50" }
+        ]
+      },
+      {
+        "name": "Specialty Rolls",
+        "item_count": 9,
+        "items": [
+          { "name": "Tempura Roll (8 pcs)", "price": "$6.95", "description": "Spicy, krab, eel sauce, and deep fried" },
+          { "name": "California Roll (8 pcs)", "price": "$5.50", "description": "Krab, avocado, cucumber, and roe" },
+          { "name": "Philadelphia Roll (8 pcs)", "price": "$6.50", "description": "Salmon, avocado, and cream cheese" },
+          { "name": "Boston Roll (6 pcs)", "price": "$5.95", "description": "Shrimp, avocado, cucumber, and spicy mayo" },
+          { "name": "Shrimp Tempura Roll (10 pcs)", "price": "$7.95", "description": "Tempura shrimp, cucumber, cream cheese, eel sauce" },
+          { "name": "Tuna Avocado Roll (8 pcs)", "price": "$6.50" },
+          { "name": "Alaskan Roll (8 pcs)", "price": "$6.50", "description": "Salmon, avocado, cucumber, and roe" },
+          { "name": "Yummy Yummy Roll (8 pcs)", "price": "$6.50", "description": "Krab, cream cheese, and avocado" },
+          { "name": "Salmon Avocado Roll (8 Pcs)", "price": "$6.50" }
+        ]
+      },
+      {
+        "name": "Signature Rolls",
+        "item_count": 27,
+        "items": [
+          { "name": "Dancing Krab Roll (10 pcs)", "price": "$11.95", "description": "Tempura shrimp, spicy krab, cream cheese, eel sauce, spicy mayo" },
+          { "name": "Rainbow Roll (8 pcs)", "price": "$10.95", "description": "Krab, avocado, cucumber, topped with fish" },
+          { "name": "Koizi Roll (10 pcs)", "price": "$11.95", "description": "Tempura shrimp, spicy tuna, seaweed salad, cream cheese, eel sauce" },
+          { "name": "Rock and Roll (10 pcs)", "price": "$9.95", "description": "Spicy krab, white fish, cream cheese, deep fried, eel sauce" },
+          { "name": "Mt. Fuji Roll (10 pcs)", "price": "$10.95", "description": "Fried chicken, crab salad, spicy mayo, eel sauce, roe" },
+          { "name": "Red Dragon Roll (10 pcs)", "price": "$11.95", "description": "Shrimp tempura, cream cheese, cucumber, spicy tuna on top" },
+          { "name": "Ninja Roll (8 pcs)", "price": "$9.95", "description": "Sweet potato inside, topped with avocado and eel sauce" },
+          { "name": "Sexy Roll (6 pcs)", "price": "$9.95" },
+          { "name": "Hawaiian Roll (10 pcs)", "price": "$10.95", "description": "Tempura shrimp, cucumber, fresh mango, mango sauce" },
+          { "name": "Hokkaido Roll (8 pcs)", "price": "$11.95" },
+          { "name": "Dynamite Roll (10 pcs)", "price": "$9.95" },
+          { "name": "Volcano Roll (8pcs)", "price": "$11.95" },
+          { "name": "Tiger Roll (8pcs)", "price": "$14.95" },
+          { "name": "Godzilla Roll (8 Pcs)", "price": "$14.95" },
+          { "name": "Dragon Roll (8 Pcs)", "price": "$13.95" },
+          { "name": "Kobe Roll (8pcs)", "price": "$15.95", "description": "Lettuce, cucumber, avocado inside, seared beef, fried garlic, yuzu sauce" }
+        ]
+      },
+      {
+        "name": "Sashimi",
+        "item_count": 13,
+        "items": [
+          { "name": "Tuna (sa)", "price": "$2.25" },
+          { "name": "Salmon (sa)", "price": "$2.25" },
+          { "name": "Shrimp (sa)", "price": "$2.25" },
+          { "name": "White Fish (sa)", "price": "$2.25" },
+          { "name": "Yellowtail (sa)", "price": "$2.25" },
+          { "name": "White Tuna (sa)", "price": "$2.25" },
+          { "name": "Octopus (sa)", "price": "$2.25" },
+          { "name": "Eel (sa)", "price": "$2.25" },
+          { "name": "Surf Clam (sa)", "price": "$2.25" },
+          { "name": "Mackerel (sa)", "price": "$2.25" }
+        ]
+      },
+      {
+        "name": "Hibachi (served with vegetable, soup, salad)",
+        "item_count": 12,
+        "items": [
+          { "name": "Chicken Hibachi", "price": "$14.95" },
+          { "name": "Shrimp Hibachi", "price": "$16.95" },
+          { "name": "NY Strip Steak Hibachi", "price": "$17.95" },
+          { "name": "Tofu Hibachi", "price": "$14.95" },
+          { "name": "Vegetable Hibachi", "price": "$12.95" },
+          { "name": "Squid Hibachi", "price": "$15.95" },
+          { "name": "Scallop (8 pcs) Hibachi", "price": "$20.95" },
+          { "name": "Scallop & Shrimp Hibachi", "price": "$20.95" },
+          { "name": "Lobster Hibachi", "price": "$24.95" },
+          { "name": "Lobster & Shrimp Hibachi", "price": "$24.95" },
+          { "name": "Lobster & Chicken Hibachi", "price": "$23.95" },
+          { "name": "Lobster & NY Strip", "price": "$24.95" }
+        ]
+      },
+      {
+        "name": "Entrees",
+        "item_count": 8,
+        "items": [
+          { "name": "General Tso Chicken", "price": "$10.95" },
+          { "name": "Mango Chicken", "price": "$10.95" },
+          { "name": "Singapore Rice Noodles", "price": "$10.95" },
+          { "name": "Mongolian Beef", "price": "$12.95" },
+          { "name": "Teriyaki Chicken", "price": "$13.95" },
+          { "name": "Teriyaki Shrimp", "price": "$15.95" },
+          { "name": "Tonkotsu Ramen", "price": "$15.95" },
+          { "name": "Chicken Katsu", "price": "$13.95" }
+        ]
+      },
+      {
+        "name": "Kids Menu",
+        "item_count": 5,
+        "items": [
+          { "name": "Chicken Nuggets (6 pcs)", "price": "$3.95" },
+          { "name": "French Fries", "price": "$2.95" },
+          { "name": "Corn Nuggets (6 pcs)", "price": "$4.95" },
+          { "name": "Fried Dough (4 pcs)", "price": "$4.95" },
+          { "name": "Onion Ring (6 pcs)", "price": "$6.95" }
+        ]
+      },
+      {
+        "name": "Beverages",
+        "item_count": 2,
+        "items": [
+          { "name": "Coke (can)", "price": "$2.00" },
+          { "name": "Sprite (can)", "price": "$2.00" }
+        ]
+      },
+      {
+        "name": "Bento Boxes & Combos",
+        "item_count": 4,
+        "items": [
+          { "name": "California Roll Bento Box", "price": "$10.95" },
+          { "name": "Yummy Yummy Roll Bento Box", "price": "$10.95" },
+          { "name": "Any 2 Roll Combo", "price": "$8.95" },
+          { "name": "Any 3 Roll Combo", "price": "$12.95" }
+        ]
+      }
+    ],
+    "total_items": 128,
+    "popular_dishes": [
+      "Dancing Krab Roll",
+      "Koizi Roll",
+      "Rainbow Roll",
+      "Crab Rangoon",
+      "Gyoza",
+      "Ginger Salad",
+      "Mango Chicken",
+      "General Tso Chicken"
+    ]
+  },
+
+  "social_media": {
+    "instagram": {
+      "url": "https://www.instagram.com/koizi_sushi_and_hibachi/",
+      "handle": "@koizi_sushi_and_hibachi",
+      "followers": 75,
+      "active": false,
+      "notes": "Very low follower count, likely underutilized"
+    },
+    "facebook": {
+      "url": null,
+      "followers": null,
+      "active": null,
+      "notes": "Facebook page not easily discoverable through search - weak social presence"
+    },
+    "other_profiles": {
+      "yelp": "https://www.yelp.com/biz/koizi-endless-hibachi-and-sushi-eatery-tampa",
+      "tripadvisor": "https://www.tripadvisor.com/Restaurant_Review-g34678-d4097198-Reviews-Koizi_Endless_Hibachi_Sushi-Tampa_Florida.html",
+      "doordash": "https://www.doordash.com/en/store/koizi-endless-hibachi-&-sushi-eatery-tampa-328933/",
+      "ubereats": "https://www.ubereats.com/store/koizi-endless-hibachi-&-sushi-eatery-tampa-palms/2zAZe3DiRjSuD0C84Am20A",
+      "grubhub": "https://www.grubhub.com/restaurant/koizi-endless-hibachi--sushi-eatery-17012-palm-pointe-dr-tampa/3224701",
+      "bbb": "https://www.bbb.org/us/fl/tampa/profile/restaurants/koizi-endless-hibachi-sushi-eatery-0653-90342401"
+    }
+  },
+
+  "competitive_intel": {
+    "current_platform": "SimpleMenu (Online Ordering Platform)",
+    "platform_limitations": [
+      "Generic template-based design with no brand customization",
+      "No logo or visual brand identity on the site",
+      "Only 4 pages (Home, Menu, About, Contact) - very basic",
+      "About Us section reads like auto-generated content with menu item names mixed in",
+      "No customer reviews or testimonials displayed",
+      "No photos of the restaurant interior or dining experience",
+      "No information about the AYCE dining concept or pricing",
+      "Hours on website footer differ from Yelp hours (may confuse customers)",
+      "No location map or directions",
+      "No social media links visible on the website",
+      "SEO-spam footer with dozens of keyword-stuffed local links"
+    ],
+    "missing_from_current_site": [
+      "Brand logo and visual identity",
+      "Customer reviews and testimonials section",
+      "AYCE concept explanation and pricing (lunch vs dinner)",
+      "Restaurant interior/ambiance photos",
+      "Google Maps integration for directions",
+      "Social media integration",
+      "Multiple location information",
+      "Reservation system or link",
+      "Photo gallery of signature dishes",
+      "Speed optimization for images (9.8MB page load)",
+      "Mobile-first design focus"
+    ],
+    "strengths_to_preserve": [
+      "Online ordering integration with SimpleMenu",
+      "Full menu with prices and descriptions",
+      "Food photography for dishes (via Cloudinary)"
+    ]
+  },
+
+  "dining_attributes": {
+    "concept": "All-You-Can-Eat (AYCE) Hibachi and Sushi",
+    "style": "Made-to-order (NOT buffet)",
+    "atmosphere": "Casual",
+    "noise_level": "Moderate",
+    "good_for": ["Groups", "Kids", "Families"],
+    "dogs_allowed": true,
+    "takes_reservations": true,
+    "offers_delivery": true,
+    "offers_takeout": true,
+    "health_score": "Met Inspection Standards",
+    "payment": ["Apple Pay", "Android Pay", "Credit Cards"]
+  },
+
+  "scrape_metadata": {
+    "scraped_at": "2026-02-10T21:47:00Z",
+    "sources_used": ["website", "yelp", "google_search", "instagram_search", "facebook_search", "tripadvisor_search", "bbb"],
+    "data_completeness": 0.88,
+    "cross_validation_conflicts": [
+      {
+        "field": "hours",
+        "website_value": "Mon-Sat 11:30am-9:30pm, Sun 12pm-8:30pm",
+        "yelp_value": "Mon 11:30AM-10PM, Tue Closed, Wed-Sat 11:30AM-10PM, Sun 12PM-9PM",
+        "resolution": "Using Yelp hours as primary (more granular, shows Tuesday closure)"
+      }
+    ],
+    "screenshot_path": ".prospect/prospect-current-site-home.png"
+  }
+}
