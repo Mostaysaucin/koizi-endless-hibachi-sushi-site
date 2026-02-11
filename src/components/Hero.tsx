@@ -45,7 +45,7 @@ export default function Hero() {
           Tampa Bay&apos;s premier all-you-can-eat Japanese dining experience
           since 2011. Every dish crafted fresh, never from a buffet line.
         </p>
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 fade-in-up-delay-2">
+        <div className="flex flex-col items-center gap-4 fade-in-up-delay-2">
           <a
             href="#menu"
             className="inline-block px-8 py-4 rounded-lg text-lg font-medium transition-all duration-300 hover:opacity-90 hover:scale-105"
@@ -56,27 +56,42 @@ export default function Hero() {
           >
             View Our Menu
           </a>
-          <a
-            href="https://order.simplemenu.com/store/1810"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block px-8 py-4 rounded-lg text-lg font-medium border-2 transition-all duration-300 hover:scale-105"
-            style={{
-              borderColor: "var(--accent)",
-              color: "var(--accent)",
-              backgroundColor: "transparent",
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.backgroundColor = "var(--accent)";
-              e.currentTarget.style.color = "var(--background)";
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.backgroundColor = "transparent";
-              e.currentTarget.style.color = "var(--accent)";
-            }}
+          <p
+            className="text-sm uppercase tracking-[0.15em] mt-2"
+            style={{ color: "var(--text-secondary)" }}
           >
             Order Online
-          </a>
+          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+            {[
+              { name: "Tampa Palms", url: "https://order.simplemenu.com/store/1810" },
+              { name: "New Port Richey", url: "https://www.koiziendlesshibachisushieatery.com/" },
+              { name: "Royal Palm Beach", url: "https://koizifl.com/" },
+            ].map((loc) => (
+              <a
+                key={loc.name}
+                href={loc.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-6 py-3 rounded-lg text-base font-medium border-2 transition-all duration-300 hover:scale-105"
+                style={{
+                  borderColor: "var(--accent)",
+                  color: "var(--accent)",
+                  backgroundColor: "transparent",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.backgroundColor = "var(--accent)";
+                  e.currentTarget.style.color = "var(--background)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.backgroundColor = "transparent";
+                  e.currentTarget.style.color = "var(--accent)";
+                }}
+              >
+                {loc.name}
+              </a>
+            ))}
+          </div>
         </div>
       </div>
 

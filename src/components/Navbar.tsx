@@ -1,10 +1,18 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
+
+const orderLocations = [
+  { name: "Tampa Palms", url: "https://order.simplemenu.com/store/1810" },
+  { name: "New Port Richey", url: "https://www.koiziendlesshibachisushieatery.com/" },
+  { name: "Royal Palm Beach", url: "https://koizifl.com/" },
+];
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [orderOpen, setOrderOpen] = useState(false);
+  const orderRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
@@ -12,11 +20,20 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (orderRef.current && !orderRef.current.contains(e.target as Node)) {
+        setOrderOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
   const navLinks = [
     { label: "Menu", href: "#menu" },
     { label: "Locations", href: "#locations" },
     { label: "About", href: "#about" },
-    { label: "Order Online", href: "https://order.simplemenu.com/store/1810", accent: true, external: true },
   ];
 
   return (
@@ -49,24 +66,52 @@ export default function Navbar() {
             <a
               key={link.label}
               href={link.href}
-              {...(link.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-              className={`text-sm font-medium tracking-wider uppercase transition-all duration-200 ${
-                link.accent
-                  ? "px-5 py-2 rounded-lg"
-                  : "hover:opacity-80"
-              }`}
-              style={
-                link.accent
-                  ? {
-                      backgroundColor: "var(--primary)",
-                      color: "var(--text-primary)",
-                    }
-                  : { color: "var(--text-secondary)" }
-              }
+              className="text-sm font-medium tracking-wider uppercase transition-all duration-200 hover:opacity-80"
+              style={{ color: "var(--text-secondary)" }}
             >
               {link.label}
             </a>
           ))}
+
+          {/* Order Online dropdown */}
+          <div className="relative" ref={orderRef}>
+            <button
+              onClick={() => setOrderOpen(!orderOpen)}
+              className="text-sm font-medium tracking-wider uppercase px-5 py-2 rounded-lg transition-all duration-200 cursor-pointer"
+              style={{
+                backgroundColor: "var(--primary)",
+                color: "var(--text-primary)",
+              }}
+            >
+              Order Online
+            </button>
+            {orderOpen && (
+              <div
+                className="absolute right-0 top-full mt-2 w-56 rounded-lg overflow-hidden shadow-xl"
+                style={{ backgroundColor: "var(--surface-light)", border: "1px solid var(--surface)" }}
+              >
+                {orderLocations.map((loc) => (
+                  <a
+                    key={loc.name}
+                    href={loc.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block px-5 py-3 text-sm font-medium transition-all duration-150 hover:pl-6"
+                    style={{ color: "var(--text-primary)" }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.backgroundColor = "var(--primary)";
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.backgroundColor = "transparent";
+                    }}
+                    onClick={() => setOrderOpen(false)}
+                  >
+                    {loc.name}
+                  </a>
+                ))}
+              </div>
+            )}
+          </div>
         </div>
 
         {/* Mobile hamburger */}
@@ -112,16 +157,37 @@ export default function Navbar() {
             <a
               key={link.label}
               href={link.href}
-              {...(link.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
               onClick={() => setMenuOpen(false)}
               className="block text-base font-medium py-2 transition-opacity hover:opacity-80"
-              style={{
-                color: link.accent ? "var(--primary)" : "var(--text-secondary)",
-              }}
+              style={{ color: "var(--text-secondary)" }}
             >
               {link.label}
             </a>
           ))}
+          <div
+            className="pt-2"
+            style={{ borderTop: "1px solid var(--surface-light)" }}
+          >
+            <p
+              className="text-xs uppercase tracking-wider mb-3"
+              style={{ color: "var(--text-secondary)" }}
+            >
+              Order Online
+            </p>
+            {orderLocations.map((loc) => (
+              <a
+                key={loc.name}
+                href={loc.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setMenuOpen(false)}
+                className="block text-base font-medium py-2 transition-opacity hover:opacity-80"
+                style={{ color: "var(--primary)" }}
+              >
+                {loc.name}
+              </a>
+            ))}
+          </div>
         </div>
       )}
     </nav>
