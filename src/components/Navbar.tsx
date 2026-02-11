@@ -16,7 +16,7 @@ export default function Navbar() {
     { label: "Menu", href: "#menu" },
     { label: "Locations", href: "#locations" },
     { label: "About", href: "#about" },
-    { label: "Order Online", href: "#locations", accent: true },
+    { label: "Order Online", href: "https://order.simplemenu.com/store/1810", accent: true, external: true },
   ];
 
   return (
@@ -49,6 +49,7 @@ export default function Navbar() {
             <a
               key={link.label}
               href={link.href}
+              {...(link.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
               className={`text-sm font-medium tracking-wider uppercase transition-all duration-200 ${
                 link.accent
                   ? "px-5 py-2 rounded-lg"
@@ -111,6 +112,7 @@ export default function Navbar() {
             <a
               key={link.label}
               href={link.href}
+              {...(link.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
               onClick={() => setMenuOpen(false)}
               className="block text-base font-medium py-2 transition-opacity hover:opacity-80"
               style={{

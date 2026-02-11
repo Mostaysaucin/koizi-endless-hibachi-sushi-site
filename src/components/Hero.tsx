@@ -57,7 +57,9 @@ export default function Hero() {
             View Our Menu
           </a>
           <a
-            href="#locations"
+            href="https://order.simplemenu.com/store/1810"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block px-8 py-4 rounded-lg text-lg font-medium border-2 transition-all duration-300 hover:scale-105"
             style={{
               borderColor: "var(--accent)",

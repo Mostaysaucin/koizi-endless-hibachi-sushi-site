@@ -1,3 +1,9 @@
+const orderLocations = [
+  { name: "Tampa Palms", url: "https://order.simplemenu.com/store/1810" },
+  { name: "New Port Richey", url: "https://www.koiziendlesshibachisushieatery.com/" },
+  { name: "Royal Palm Beach", url: "https://koizifl.com/" },
+];
+
 export default function OrderingCTA() {
   return (
     <section
@@ -16,21 +22,29 @@ export default function OrderingCTA() {
           className="text-base sm:text-lg mb-8 max-w-xl mx-auto"
           style={{ color: "var(--text-secondary)" }}
         >
-          Pick your nearest location and order online for pickup or delivery.
-          Also available on DoorDash, Uber Eats, and Grubhub.
+          Order online for pickup or delivery. Also available on DoorDash,
+          Uber Eats, and Grubhub.
         </p>
 
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
-          <a
-            href="#locations"
-            className="inline-block px-8 py-4 rounded-lg text-lg font-medium transition-all duration-300 hover:opacity-90 hover:scale-105"
-            style={{
-              backgroundColor: "var(--primary)",
-              color: "var(--text-primary)",
-            }}
-          >
-            Choose Your Location & Order
-          </a>
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
+          {orderLocations.map((loc) => (
+            <a
+              key={loc.name}
+              href={loc.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-8 py-4 rounded-lg text-lg font-medium transition-all duration-300 hover:opacity-90 hover:scale-105"
+              style={{
+                backgroundColor: "var(--primary)",
+                color: "var(--text-primary)",
+              }}
+            >
+              Order {loc.name}
+            </a>
+          ))}
+        </div>
+
+        <div className="mb-8">
           <a
             href="tel:8139711919"
             className="inline-block px-8 py-4 rounded-lg text-lg font-medium border-2 transition-all duration-300 hover:scale-105"
