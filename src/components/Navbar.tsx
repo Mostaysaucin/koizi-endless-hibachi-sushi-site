@@ -4,8 +4,8 @@ import { useState, useEffect, useRef } from "react";
 
 const orderLocations = [
   { name: "Tampa Palms", url: "https://order.simplemenu.com/store/1810" },
-  { name: "New Port Richey", url: "https://www.koiziendlesshibachisushieatery.com/" },
-  { name: "Royal Palm Beach", url: "https://koizifl.com/" },
+  { name: "New Port Richey", url: "https://order.mealkeyway.com/merchant/4d3865464e7368306574572f5530744e62666c734b413d3d/main" },
+  { name: "Royal Palm Beach", url: "https://fromtherestaurant.com/koizi-endless-gourmet-grill--sushi/" },
 ];
 
 export default function Navbar() {

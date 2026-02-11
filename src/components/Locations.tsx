@@ -18,7 +18,7 @@ const locations = [
     address: "4120 Little Rd",
     city: "New Port Richey, FL 34653",
     phone: "(727) 376-1888",
-    orderUrl: "https://www.koiziendlesshibachisushieatery.com/",
+    orderUrl: "https://order.mealkeyway.com/merchant/4d3865464e7368306574572f5530744e62666c734b413d3d/main",
     hours: [
       "Mon-Sat: 11:30 AM - 10 PM",
       "Sun: 12 PM - 9 PM",
@@ -29,7 +29,7 @@ const locations = [
     address: "10233 Okeechobee Blvd B1",
     city: "Royal Palm Beach, FL 33411",
     phone: "(561) 619-9989",
-    orderUrl: "https://koizifl.com/",
+    orderUrl: "https://fromtherestaurant.com/koizi-endless-gourmet-grill--sushi/",
     hours: [
       "Mon-Sat: 11:30 AM - 10 PM",
       "Sun: 12 PM - 9 PM",

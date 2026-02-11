@@ -65,8 +65,8 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
             {[
               { name: "Tampa Palms", url: "https://order.simplemenu.com/store/1810" },
-              { name: "New Port Richey", url: "https://www.koiziendlesshibachisushieatery.com/" },
-              { name: "Royal Palm Beach", url: "https://koizifl.com/" },
+              { name: "New Port Richey", url: "https://order.mealkeyway.com/merchant/4d3865464e7368306574572f5530744e62666c734b413d3d/main" },
+              { name: "Royal Palm Beach", url: "https://fromtherestaurant.com/koizi-endless-gourmet-grill--sushi/" },
             ].map((loc) => (
               <a
                 key={loc.name}
