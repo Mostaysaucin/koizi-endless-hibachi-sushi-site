@@ -1,3 +1,4 @@
+import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Concept from "@/components/Concept";
 import Menu from "@/components/Menu";
@@ -10,16 +11,19 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main>
-      <Hero />
-      <Concept />
-      <Menu />
-      <Reviews />
-      <Gallery />
-      <Locations />
-      <OrderingCTA />
-      <About />
-      <Footer />
-    </main>
+    <>
+      <Navbar />
+      <main>
+        <Hero />
+        <Concept />
+        <Menu />
+        <Reviews />
+        <Gallery />
+        <Locations />
+        <OrderingCTA />
+        <About />
+        <Footer />
+      </main>
+    </>
   );
 }

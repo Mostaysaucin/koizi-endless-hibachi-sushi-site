@@ -26,7 +26,7 @@ export default function About() {
             className="text-base leading-relaxed mb-6"
             style={{ color: "var(--text-secondary)" }}
           >
-            What started as a single restaurant has grown into four locations
+            What started as a single restaurant has grown into three locations
             across Florida, each carrying the same commitment to freshness,
             generous portions, and authentic Japanese recipes. From our signature
             rolls crafted by skilled sushi chefs to hibachi grilled right before

@@ -26,6 +26,12 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative z-10 text-center max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
+        <p
+          className="text-lg sm:text-xl tracking-[0.3em] uppercase mb-4 fade-in-up"
+          style={{ color: "var(--accent)", fontFamily: "'DM Sans', sans-serif", fontWeight: 500 }}
+        >
+          Koizi
+        </p>
         <h1
           className="text-5xl sm:text-6xl lg:text-7xl mb-6 fade-in-up"
           style={{ color: "var(--text-primary)" }}
@@ -51,9 +57,7 @@ export default function Hero() {
             View Our Menu
           </a>
           <a
-            href="https://order.simplemenu.com/store/1810"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#locations"
             className="inline-block px-8 py-4 rounded-lg text-lg font-medium border-2 transition-all duration-300 hover:scale-105"
             style={{
               borderColor: "var(--accent)",

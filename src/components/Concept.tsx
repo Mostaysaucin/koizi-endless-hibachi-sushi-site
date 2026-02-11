@@ -1,7 +1,7 @@
 export default function Concept() {
   const stats = [
     { value: "100+", label: "Menu Items" },
-    { value: "4", label: "Florida Locations" },
+    { value: "3", label: "Florida Locations" },
     { value: "2011", label: "Since" },
   ];
 

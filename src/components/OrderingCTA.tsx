@@ -16,22 +16,20 @@ export default function OrderingCTA() {
           className="text-base sm:text-lg mb-8 max-w-xl mx-auto"
           style={{ color: "var(--text-secondary)" }}
         >
-          Order online for pickup or delivery. Also available on DoorDash, Uber
-          Eats, and Grubhub.
+          Pick your nearest location and order online for pickup or delivery.
+          Also available on DoorDash, Uber Eats, and Grubhub.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
           <a
-            href="https://order.simplemenu.com/store/1810"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#locations"
             className="inline-block px-8 py-4 rounded-lg text-lg font-medium transition-all duration-300 hover:opacity-90 hover:scale-105"
             style={{
               backgroundColor: "var(--primary)",
               color: "var(--text-primary)",
             }}
           >
-            Order Online
+            Choose Your Location & Order
           </a>
           <a
             href="tel:8139711919"

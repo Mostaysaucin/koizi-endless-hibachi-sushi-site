@@ -5,6 +5,7 @@ const locations = [
     address: "17012 Palm Pointe Dr",
     city: "Tampa, FL 33647",
     phone: "(813) 971-1919",
+    orderUrl: "https://order.simplemenu.com/store/1810",
     hours: [
       "Mon: 11:30 AM - 10 PM",
       "Tue: Closed",
@@ -16,17 +17,8 @@ const locations = [
     name: "New Port Richey",
     address: "4120 Little Rd",
     city: "New Port Richey, FL 34653",
-    phone: "",
-    hours: [
-      "Mon-Sat: 11:30 AM - 10 PM",
-      "Sun: 12 PM - 9 PM",
-    ],
-  },
-  {
-    name: "Brandon",
-    address: "Brandon, FL",
-    city: "",
-    phone: "",
+    phone: "(727) 376-1888",
+    orderUrl: "https://www.koiziendlesshibachisushieatery.com/",
     hours: [
       "Mon-Sat: 11:30 AM - 10 PM",
       "Sun: 12 PM - 9 PM",
@@ -36,7 +28,8 @@ const locations = [
     name: "Royal Palm Beach",
     address: "10233 Okeechobee Blvd B1",
     city: "Royal Palm Beach, FL 33411",
-    phone: "",
+    phone: "(561) 619-9989",
+    orderUrl: "https://koizifl.com/",
     hours: [
       "Mon-Sat: 11:30 AM - 10 PM",
       "Sun: 12 PM - 9 PM",
@@ -47,30 +40,37 @@ const locations = [
 export default function Locations() {
   return (
     <section
+      id="locations"
       className="section-padding"
       style={{ backgroundColor: "var(--surface)" }}
       aria-label="Locations"
     >
       <div className="max-w-6xl mx-auto">
+        <p
+          className="text-center text-sm tracking-[0.2em] uppercase mb-3"
+          style={{ color: "var(--accent)" }}
+        >
+          Visit Us
+        </p>
         <h2
           className="text-4xl sm:text-5xl text-center mb-4"
           style={{ color: "var(--text-primary)" }}
         >
-          4 Locations Across Florida
+          3 Locations Across Florida
         </h2>
         <p
           className="text-center text-base mb-12 max-w-xl mx-auto"
           style={{ color: "var(--text-secondary)" }}
         >
-          Find your nearest Koizi and experience endless Japanese dining.
+          Find your nearest Koizi and order directly from that location.
         </p>
 
-        {/* 2x2 Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        {/* 3-column grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {locations.map((location) => (
             <article
               key={location.name}
-              className="rounded-xl overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+              className="rounded-xl overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-lg flex flex-col"
               style={{ backgroundColor: "var(--surface-light)" }}
             >
               {/* Crimson accent bar */}
@@ -79,7 +79,7 @@ export default function Locations() {
                 style={{ backgroundColor: "var(--primary)" }}
               />
 
-              <div className="p-6">
+              <div className="p-6 flex flex-col flex-1">
                 <div className="flex items-center gap-3 mb-4">
                   <h3
                     className="text-2xl sm:text-3xl"
@@ -119,12 +119,28 @@ export default function Locations() {
                 )}
 
                 <div
-                  className="text-sm space-y-1"
+                  className="text-sm space-y-1 mb-6"
                   style={{ color: "var(--text-secondary)" }}
                 >
                   {location.hours.map((line, i) => (
                     <p key={i}>{line}</p>
                   ))}
+                </div>
+
+                {/* Order button per location */}
+                <div className="mt-auto">
+                  <a
+                    href={location.orderUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block text-center px-6 py-3 rounded-lg text-sm font-medium uppercase tracking-wider transition-all duration-300 hover:opacity-90 hover:scale-[1.02]"
+                    style={{
+                      backgroundColor: "var(--primary)",
+                      color: "var(--text-primary)",
+                    }}
+                  >
+                    Order from {location.name}
+                  </a>
                 </div>
               </div>
             </article>
